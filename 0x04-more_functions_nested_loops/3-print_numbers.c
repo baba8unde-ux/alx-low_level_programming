@@ -1,15 +1,16 @@
 #include "main.h"
 
 /**
- * print_numbers - print 0 to 9
+ * _isdigit - checks for a digit 0 through 9
+ * @c: digit to be checked
+ * Return: 1 if true, 0 if false
  */
 
-void print_numbers(void)
+int _isdigit(int c)
 {
-	char i;
+	if (c >= '0' && c <= '9')
+		return (1);
 
-	for (i = 0; i <= 9; i++)
-		_putchar(i);
-
-	_putchar(n);
+	return (0);
 }
+
